@@ -1,0 +1,46 @@
+var iFileName = "Homebrew Syntax - SpellsList.js"; 
+
+RequiredSheetVersion(12.999); 
+
+SpellsList["mindspike"] = { 
+
+	name : "Mindspike",
+
+	nameShort : "Mindspike", 
+  
+	nameAlt : "Mindspike", 
+
+	regExpSearch : /^(?=.*mind)(?=.*spike).*$/i, 
+
+	classes : ["warlock", "sorcerer", "wizard"], 
+
+	source : ["HB", 0], //Required; the source and the page number. "HB" stands for homebrew. //Note that filling out this incorrectly will prohibit the spell from showing up in the spell selection dialogues. //If you want to add a custom source, see "Homebrew Syntax - SourceList.js" // This can be an array of arrays to indicate the things appears in multiple sources. For example, if something appears on page 7 of the Elemental Evil Player's Companion and on page 115 of the Sword Coast Adventure Guide, use the following: [["E", 7], ["S", 115]]
+
+	level : 2, 
+
+	school : "Div", 
+  
+	time : "1 Action", 
+
+	range : "60 ft", 
+
+	components : "S", 
+
+	duration : "Concentration, up to 1 hour", 
+
+	save : "Wis", 
+  
+	description : "Target takes 3d8 psychic damage on a failed save, or half as much damage on a successful one. ",
+
+	descriptionMetric : "",
+  
+	descriptionFull : "You reach into the mind of one creature you can see within range. The target must make a Wisdom saving throw, taking 3d8 psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can’t become hidden from you, and if it’s invisible, it gains no benefit from that condition against you.", //Optional; The full Spell Description. This string will be put in the mouseover text (tooltip) of the description field
+
+	ritual : false,
+  
+	psionic : false, 
+  
+	firstCol : "2", 
+  
+	dependencies : [],
+};
